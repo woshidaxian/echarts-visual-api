@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nodemon ./bin/www dev",
-    "start": "node ./bin/www pro"
+    "devRoot": "nodemon ./bin/www devRoot",
+    "start": "node ./bin/www pro",
+    "i": "npm i"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

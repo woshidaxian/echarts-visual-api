@@ -10,13 +10,22 @@ if (process.env.NODE_ENV == 'dev') {
     DATABASE: 'chart_visual',
     DIALECT: 'mysql'
   }
+} else if (process.env.NODE_ENV == 'devRoot'){
+  dbConfig = {
+    HOST: 'localhost',
+    PORT: '3306',
+    USERNAME: 'root',
+    PASSWORD: 'root',
+    DATABASE: 'chart_visual',
+    DIALECT: 'mysql'
+  }
 } else if (process.env.NODE_ENV == 'pro') {
   dbConfig = {
     HOST: 'localhost',
     PORT: '13857',
     USERNAME: 'root',
     PASSWORD: 'hwg@HWG666',
-    DATABASE: 'personal',
+    DATABASE: 'chart_visual',
     DIALECT: 'mysql'
   }
 }
